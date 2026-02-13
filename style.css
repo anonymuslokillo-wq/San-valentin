@@ -1,0 +1,47 @@
+body{
+background: pink;
+font-family: sans-serif;
+text-align:center;
+overflow:hidden;
+}
+
+.container{
+margin-top:50px;
+}
+
+img{
+width:200px;
+}
+
+button{
+padding:15px 25px;
+font-size:18px;
+margin:10px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+#si{
+background:green;
+color:white;
+}
+
+#no{
+background:red;
+color:white;
+position:absolute;
+}
+
+.hearts::before{
+content:"💖 💘 💝 💗 💓 💞";
+font-size:30px;
+position:absolute;
+width:100%;
+animation: float 5s linear infinite;
+}
+
+@keyframes float{
+0%{top:100%;}
+100%{top:-10%;}
+}
